@@ -7,12 +7,16 @@
 		</tr>
 	</thead>
 	<tbody>
- <?php foreach ($isi_berita as $ib) { ?>
+ <?php 
+$i=1;
+ foreach ($isi_berita as $ib) { ?>
 		<tr>
-			<td>1</td>
-			<td><?= $ib['judul'] ?></td>
-			<td><?= $ib['isi'] ?></td>
+			<td> <?= $i ?> </td>
+			<td> <?= $ib['judul'] ?> </td>
+			<td> <?= $ib['isi'] ?> </td>
 		</tr>
-		<?php } ?>
+		<?php 
+			$i++;
+		} ?>
 	</tbody>
 </table>
