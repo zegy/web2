@@ -1,9 +1,5 @@
 <?php 
-include 'view/BerandaUI.php';
-
-$brd = new BerandaUI();
-
-$brd->tampilLengkap();
-
-
- ?>
+	include 'view/BerandaUI.php';
+	$brd = new BerandaUI();
+	$brd->tampilLengkap();
+?>
